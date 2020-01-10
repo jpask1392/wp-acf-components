@@ -1,0 +1,70 @@
+.split-section {
+  position: relative;
+
+  .text {
+    padding: 50px;
+  }
+}
+
+.ignore-padding {
+  background-clip: content-box;
+}
+
+.overlay-primary {
+  background-color: red;
+}
+
+.standard-background {
+  pointer-events: none;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  > .background-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+
+  > .background-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+.to-edge {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+
+  div {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 0;
+  }
+}
+
+.alignment {
+  //
+}
+
+.alignment--left {
+  .text {
+    left: 50%;
+  }
+}
+
+.alignment--right {
+  .to-edge {
+    left: 50%;
+  }
+}

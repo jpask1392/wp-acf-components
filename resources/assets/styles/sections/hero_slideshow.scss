@@ -1,0 +1,16 @@
+.hero-slideshow {
+  min-height: calc(100vh - #{$banner-height});
+  width: 100vw;
+
+  .carousel-item {
+    min-height: calc(100vh - #{$banner-height});
+    background-size: cover;
+    background-position: center;
+  }
+
+  &.has-overlay {
+    .content--hero {
+      color: white;
+    }
+  }
+}

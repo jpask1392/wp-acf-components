@@ -1,0 +1,20 @@
+.hero-standard--paralax {
+  min-height: calc(100vh - #{$banner-height});
+}
+
+.hero-standard {
+  display: flex;
+  align-items: center;
+  z-index: -1;
+  // margin-top: $nav_bar_height;
+  min-height: calc(100vh - #{$banner-height});
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+
+  &.has-overlay {
+    .content--hero {
+      color: white;
+    }
+  }
+}
